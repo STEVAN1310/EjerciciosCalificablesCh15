@@ -15,9 +15,10 @@
 //
 // Pista: typeof y Number.isNaN()
 // ============================================================
-
-function esPrecioValido(valor) {
-  // Tu código aquí
+  
+  function esPrecioValido(valor) {
+    // Tu código aquí
+    return typeof valor === "number" && !Number.isNaN(valor) && valor > 0
 }
 
 // No borres esta línea: es la puerta por donde el test usa tu función
